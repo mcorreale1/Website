@@ -1,4 +1,36 @@
+body{
+	background-color: #fdf9f0;
+	height: 100%;
+}
+.header {
+	display: inline-block;
+	height: 150px;
+	width: 100%;
+	background-color: #006714;
+	float: left;
+	clear: left;
+}
+.header .container{
+	width: 400px;
 
-h1{
-	color: blue;
+}
+.header .container h1 {
+	color: #FFF;
+	text-align: center;
+}
+
+.header .container h1 a{
+	text-align: center;
+	color: #FFF;
+	text-decoration: none;
+}
+.section {
+	float: left;
+	clear: left;
+	width: 100%;
+	height: 400px;
+}
+.footer {
+	float: left;
+	width: auto;
 }
