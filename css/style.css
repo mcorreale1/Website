@@ -10,8 +10,7 @@ body{
 	float: left;
 	clear: left;
 }
-.header .container-fluid{
-}
+
 .header .container-fluid h1.title {
 	height: 80px;
 	width: auto;
@@ -59,4 +58,38 @@ body{
 	width: 64px;
 	height: 64px;
 	float: center;
+}
+
+@media screen and  (min-width: 781px){
+	.header {
+		height: 100px;
+	}
+	.header .container-fluid h1.title{
+		width: 200px;
+		float: left;
+	}
+	.header .container-fluid h1.title a{
+		width: 200px;
+		float: left;
+	}
+
+	.nav.nav-pills {
+		margin-top: 50px;
+		float: right;
+		padding: 0 20px;
+		padding-right: 0;
+	}
+	.nav.nav-pills li{
+		height: 50px;
+		width:120px;
+		margin-left: 0;
+		text-align: center;
+		float: left;
+		margin-left: 20px;
+	}
+	.nav.nav-pills li a{
+		height: auto;
+
+	}
+
 }

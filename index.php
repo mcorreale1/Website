@@ -4,7 +4,7 @@ include('inc/header.php'); ?>
 
 	<div class="section">
 		<div class="container-fluid">
-			<p>Hello</p>
+			<h1>Hello</h1>
 
 		</div>
 	</div>
