@@ -21,7 +21,7 @@
 			<ul class="nav nav-pills">
   				<li role="presentation" class="<?php if($section=='index')echo'active'; ?> "><a href="index.php">Home</a></li>
   				<li role="presentation" class="<?php if($section=='projects')echo'active'; ?> "><a href="projects.php">Projects</a></li>
-  				<li role="presentation" class="<?php if($section=='contact')echo'active'; ?> "><a href="contact.php">Contact</a></li>
+  				<li role="presentation" class="<?php if($section=='contact')echo'active'; ?> contact"><a href="contact.php">Contact</a></li>
 			</ul>
 
 			<!--<ul class="nv">

@@ -1,8 +1,9 @@
 <?php 
 require_once('inc/config.php');
-$pageTitle = "Home Page"; 
-$section ="index";
-include(ROOTPATH.'inc/header.php'); ?>
+$pageTitle = "test"; 
+$section ="test"; 
+include(ROOTPATH.'inc/header.php');
+?>
 
 	<div class="section">
 
@@ -11,5 +12,4 @@ include(ROOTPATH.'inc/header.php'); ?>
 
 		</div>
 	</div>
-
-<?php include('inc/footer.php'); ?>
+<?php include(ROOTPATH.'inc/footer.php'); ?>
