@@ -18,8 +18,8 @@ include('inc/header.php'); ?>
 
 
 		<div class = "projects">
-			<div class = "row project" id="hackRPI">
-				<div class="proj col-md-4 first">
+			<div class = "project" id="hackRPI">
+				<div class="proj first">
 					<h2>HackRPI</h2>
 					<p>Competed in my first hackathon ever at RPI in November, 2014.
 						My team used the Myo, a device that you wear around your wrist 
@@ -32,25 +32,24 @@ include('inc/header.php'); ?>
 					</p>
 				</div>	
 
-				<div class="proj col-md-4 second"> 
+				<div class="proj second"> 
 					<img class="hackrpipic" src="<?php echo BASEURL.'img/hackRPI.png';?>">
 				</div>			
 
 			</div>
-			<div class = "row project" id="treehousePHP">
-				<div class="proj col-md-4 first">
+			<div class = "project" id="treehousePHP">
+				<div class="proj first">
 					<h2>Treehouse PHP</h2>
 					<p>Completed entire HTML, CSS, PHP and Javascript course, 
-						which included popular frameworks such as jquery and Sass.
-						Also, I personally completely overhauled the CSS to make it 
+						which included popular frameworks such as JQuery and Sass.
+						I also completely overhauled the CSS to make it 
 						responsive with mobile devices, without the use of bootstrap, 
-						for practice on CSS and styling. I also included several other PHP
-						and jquery improvements to further practice using those systems.
+						for practice on CSS and styling, as well as further PHP customization.
 					</p>
 				</div>
 
-				<div class="proj col-md-4 second"> 
-					<img class="treehousepic" src="<?php echo BASEURL.'img/treehousePHP.png';?>">
+				<div class="proj second"> 
+					<a href="/treehousephp/"><img class="treehousepic" src="<?php echo BASEURL.'img/treehousePHP.png';?>"></a>
 				</div>	
 			</div>	
 		</div>

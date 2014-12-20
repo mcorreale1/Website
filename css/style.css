@@ -1,42 +1,52 @@
+
 body{
 	background-color: #f4f4f4;
 }
+
 .header {
-	display: inline-block;
-	height: 140px;
+	height: 100px;
 	width: 100%;
+	display: inline-block;
 	background-color: #19762b;
 	float: left;
 	clear: left;
 }
 
-.header .container-fluid h1.title {
+.header .title {
 	height: 80px;
-	width: auto;
+	width: 200px;
+	display: inline-block;
+	float: left;
 	font-size: 2.75em;
 	color: #FFF;
-	text-align: center;
 	margin: 10px;
-}
-.header .container-fluid h1 a{
 	text-align: center;
+}
+
+.header .container-fluid h1 a{
+	text-align: left;
 	color: #FFF;
 	text-decoration: none;
 }
 
-.header .nav.nav-pills{
-	background-color: #006714;
+.header .nav.nav-pills {
+	margin-top: 50px;
+	float: right;
+	padding: 0 20px;
+	padding-right: 0;
+	background-color: inherit;
 }
 .header .nav.nav-pills li{
-	height: 40px;
-	width:33.3%;
+	height: 50px;
+	width:122px;
 	margin-left: 0;
 	text-align: center;
+	float: left;
+	margin-left: 20px;
 }
-
 .header .nav.nav-pills li a{
 	color: #FFF
-}
+}	
 
 .section {
 	float: left;
@@ -77,82 +87,70 @@ body{
 	float: center;
 }
 
-@media screen and  (min-width: 781px){
+.container-fluid{
+	padding-left: 0;
+	padding-right: 0;
+}
+.section.projects .head {
+	height: 100px;
+}
+.section.projects .projects{ 
+	text-align: center;
+	height: auto;
+	width: auto;
+}
+.section.projects .project {
+	height: 350px;
+	width: 100%;
+	text-align: center;
+	padding-bottom: 30px;
+}
+.section .project:nth-child(even){
+	background-color: #dbdada;
+}
+.section.projects .project .proj{
+	display: inline-block;
+	float: center;
+	height: inherit;
+	min-width: 350px;
+	width:30%;
+	text-align: left;
+}
+.section.projects .proj.second{
+	vertical-align: top;
+}
+
+@media screen and (max-width: 800px){
+
 	.header {
-		height: 100px;
+		height: 140px;
 	}
-	.header .container-fluid h1.title{
-		width: 200px;
-		float: left;
-	}
-	.header .container-fluid h1.title a{
-		width: 200px;
-		float: left;
-	}
-
-	.header .nav.nav-pills {
-		margin-top: 50px;
-		float: right;
-		padding: 0 20px;
-		padding-right: 0;
-		background-color: inherit;
-	}
-	.header .nav.nav-pills li{
-		height: 50px;
-		width:122px;
-		margin-left: 0;
+	.header .title{
 		text-align: center;
-		float: left;
-		margin-left: 20px;
-	}
-	.header .nav.nav-pills li a{
-		height: auto;
-	}
-
-	.section.projects .head {
-		height: 100px;
-	}
-
-	.section.projects .head ul.proj{
-
-		width: 70%;
-		display: inline-block;
-		margin: 10px 15%;
-		background-color: inherit;
-	}
-	.section.projects .head ul.proj li{
-		color: black;
-	}
-
-	.section.projects .row .list{
-		text-align: center;
-	}
-	.section.projects .row .list a{
-		display: inline-block;
-		width: 100%;
-		height: 300px;
-	}
-
-	.section.projects .projects{ 
-		text-align: center;
-		height: auto;
 		width: auto;
+		float: center;
+		display: block;
 	}
-	.section.projects .projects .row.project {
-		height: 400px;
-		text-align: center;
-		padding-bottom: 30px;
-	}
-	.section .row.project:nth-child(even){
-		background-color: #dbdada;
-	}
-	.section.projects .row .proj{
+	.header ul.nav.nav-pills{
 		display: inline-block;
 		float: center;
-		height: inherit;
-		text-align: left;
+		width: 90%;
+		margin: 0 5%;
+		background-color: #006714;
+		padding-left: 0;
+		margin-top: 0;
 	}
-	.section.projects .row .second{
-		vertical-align: top;
+	.header .nav.nav-pills li{
+		height: 40px;
+		width:33.3%;
+		margin-left: 0;
+		text-align: center;
 	}
+	.section.projects .project .proj{
+		min-width: 300px;
+
+	}
+
+	/* FIX AT 680 */
+
 }
