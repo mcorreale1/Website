@@ -13,6 +13,7 @@ include('inc/header.php'); ?>
 
 				<li role="presentation"><a href="#hackRPI">Hack RPI</a></li>
 				<li role="presentation"><a href="#treehousePHP">Team Treehouse</a></li>
+                <li role="presentation"><a href="#website">First Website</a></li>
 			</ul>
 		</div>
 
@@ -51,7 +52,17 @@ include('inc/header.php'); ?>
 				<div class="proj second"> 
 					<a href="/treehousephp/"><img class="treehousepic" src="<?php echo BASEURL.'img/treehousePHP.png';?>"></a>
 				</div>	
-			</div>	
+			</div>
+            <div class = "project" id="website">
+				<div class="proj first">
+					<h2>First Live Website</h2>
+					<p>The website youre currently on is my very first live website that I built
+                        from scratch!
+					</p>
+				</div>
+				<div class="proj second"> 
+				</div>	
+			</div>
 		</div>
 	</div>
 </div>
