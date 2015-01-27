@@ -9,11 +9,11 @@ include('inc/header.php'); ?>
 	<div class="container-fluid">
 		<div class="head">
 			<h1>My Projects</h1>
-			<ul class="proj nav nav-pills">
+			<ul class="nav nav-pills">
 
-				<li role="presentation"><a href="#hackRPI">Hack RPI</a></li>
-				<li role="presentation"><a href="#treehousePHP">Team Treehouse</a></li>
-                <li role="presentation"><a href="#website">First Website</a></li>
+				<li class="move" role="presentation"><a href="#hackRPI">Hack RPI</a></li>
+				<li class="move" role="presentation"><a href="#treehousePHP">Team Treehouse</a></li>
+                <li class="move" role="presentation"><a href="#website">First Website</a></li>
 			</ul>
 		</div>
 
@@ -67,5 +67,14 @@ include('inc/header.php'); ?>
 	</div>
 </div>
 
+<script>
+    
+    $(".move").click(function() {
+        $('html, body').animate({
+            scrollTop: $("#elementtoScrollToID").offset().top
+        }, 2000);
+    });
+    
+</script>
 
 <?php include('inc/footer.php'); ?>
