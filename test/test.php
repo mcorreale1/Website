@@ -5,8 +5,7 @@ $section ="";
 
 //Get testing with input
 if(isset($_GET["name"])){
-    $name = $_GET["name"];
-    $name= trim(htmlspecialchars($name));
+    $name = trim(htmlspecialchars($_GET["name"]));
 }
 
 //Get testing with anchors 
@@ -22,7 +21,7 @@ include(ROOTPATH.'inc/header.php'); ?>
 <div class="section">
 	<div class="container-fluid">
         <!-- Get test 1, get input and display -->
-		<form method="get" action=""
+		<form method="get" action="">
             <table>
                 <tr>
                     <th>
@@ -44,7 +43,7 @@ include(ROOTPATH.'inc/header.php'); ?>
     
     <?php
     if(isset($name)){
-        $page="?".$_SERVER['QUERY_STRING'].'&';}
+        $page="?name=".$name.'&';}
     else{ $page ='?';}
     ?>
 
