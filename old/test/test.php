@@ -3,9 +3,12 @@ require_once('../inc/config.php');
 $pageTitle = "test"; 
 $section ="";
 
+$page='?';
 //Get testing with input
 if(isset($_GET["name"])){
-    $name = trim(htmlspecialchars($_GET["name"]));
+    $name = $_GET["name"];
+    $name= trim(htmlspecialchars($name));
+    $page="?name=".$name.'&';
 }
 
 //Get testing with anchors 
@@ -21,7 +24,7 @@ include(ROOTPATH.'inc/header.php'); ?>
 <div class="section">
 	<div class="container-fluid">
         <!-- Get test 1, get input and display -->
-		<form method="get" action="">
+		<form method="get" action=""
             <table>
                 <tr>
                     <th>
@@ -40,12 +43,6 @@ include(ROOTPATH.'inc/header.php'); ?>
         }?>
     
     <!--Get test 2, click link to post-->
-    
-    <?php
-    if(isset($name)){
-        $page="?name=".$name.'&';}
-    else{ $page ='?';}
-    ?>
 
     <a href="<?php echo $page;?>color=blue">Blue</a>
     <a href="<?php echo $page;?>color=red">Red</a>
@@ -54,8 +51,28 @@ include(ROOTPATH.'inc/header.php'); ?>
     <?php
     if(isset($color)){
     echo '<h1>Favorite Color is '.$color.'</h1>';
-    }?>
+    }
 
+    
+
+    $var1 = "Broccoli";
+    $var2 = "Cream Soda";
+    //$var1 = "Rockey Road";
+    //$var2 = "Raspberry";
+    $initial = "R";
+
+    if (stripos($var1,$initial) === 0 && stripos($var2,$initial) === 0) {
+
+        echo $var1 . " and " . $var2 . " both start with " . $initial . ".";
+
+    } else {
+
+        echo "Either " . $var1 . " or " . $var2 . " doesn't start with " . $initial . "; maybe neither of them do.";
+
+    }
+
+?>
+    
     </div>
 </div>
 
