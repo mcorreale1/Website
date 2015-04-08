@@ -1,4 +1,0 @@
-ErrorDocument 404 /website/404.php
-Rewriterule ^projects$ /website/projects.php 
-Rewriterule ^test/$ /website/test/test.php
-
