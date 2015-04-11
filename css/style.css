@@ -1,0 +1,23 @@
+.content {
+    text-align: center;
+}
+.content div {
+    display: inline-block;
+}
+.full {
+    width: 90%;
+}
+.half {
+    width: 45%;
+}
+.big.self {
+    font-size: 3.5em
+}
+.content .bio {
+}
+
+@media only screen and (min-width:700px){ 
+    .text {
+        width: 500px;
+    }
+}
